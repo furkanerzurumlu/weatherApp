@@ -13,6 +13,8 @@
 		DC7D02E828635F5100FAF725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7D02E628635F5100FAF725 /* Main.storyboard */; };
 		DC7D02EA28635F5100FAF725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D02E928635F5100FAF725 /* Assets.xcassets */; };
 		DC7D02ED28635F5100FAF725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7D02EB28635F5100FAF725 /* LaunchScreen.storyboard */; };
+		DC7D02F62863606900FAF725 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D02F52863606900FAF725 /* Weather.swift */; };
+		DC7D02FB286360E100FAF725 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D02FA286360E100FAF725 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC7D02E928635F5100FAF725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7D02EC28635F5100FAF725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC7D02EE28635F5100FAF725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7D02F52863606900FAF725 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		DC7D02FA286360E100FAF725 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		DC7D02DF28635F5100FAF725 /* weatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC7D02E028635F5100FAF725 /* AppDelegate.swift */,
-				DC7D02E228635F5100FAF725 /* SceneDelegate.swift */,
-				DC7D02E428635F5100FAF725 /* ViewController.swift */,
-				DC7D02E628635F5100FAF725 /* Main.storyboard */,
+				DC7D02F42863605100FAF725 /* Model */,
+				DC7D02F72863608100FAF725 /* Screen */,
+				DC7D02F9286360BC00FAF725 /* Router */,
+				DC7D02F8286360A300FAF725 /* Other */,
 				DC7D02E928635F5100FAF725 /* Assets.xcassets */,
-				DC7D02EB28635F5100FAF725 /* LaunchScreen.storyboard */,
 				DC7D02EE28635F5100FAF725 /* Info.plist */,
 			);
 			path = weatherApp;
+			sourceTree = "<group>";
+		};
+		DC7D02F42863605100FAF725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D02F52863606900FAF725 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC7D02F72863608100FAF725 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D02E428635F5100FAF725 /* ViewController.swift */,
+				DC7D02E628635F5100FAF725 /* Main.storyboard */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DC7D02F8286360A300FAF725 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D02E228635F5100FAF725 /* SceneDelegate.swift */,
+				DC7D02E028635F5100FAF725 /* AppDelegate.swift */,
+				DC7D02EB28635F5100FAF725 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DC7D02F9286360BC00FAF725 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D02FA286360E100FAF725 /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7D02F62863606900FAF725 /* Weather.swift in Sources */,
 				DC7D02E528635F5100FAF725 /* ViewController.swift in Sources */,
+				DC7D02FB286360E100FAF725 /* Router.swift in Sources */,
 				DC7D02E128635F5100FAF725 /* AppDelegate.swift in Sources */,
 				DC7D02E328635F5100FAF725 /* SceneDelegate.swift in Sources */,
 			);
